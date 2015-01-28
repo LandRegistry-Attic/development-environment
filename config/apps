@@ -7,6 +7,7 @@
 
 
 public_playground:8000
+property-title-api:8001
 html-prototypes:9000
 charges-html-prototype:9002
 secrets:0
