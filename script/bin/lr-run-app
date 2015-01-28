@@ -37,10 +37,15 @@ if [[ -z $@ ]]; then
 	  		app_to_start=$(basename `pwd`)
 			/vagrant/script/start $app_to_start
 		)
-	elif [ -f ./run_ruby_dev.sh ]; then
+		elif [ -f ./run_ruby_dev.sh ]; then
 			(
 			app_to_start=$(basename `pwd`)
 			/vagrant/script/start-ruby $app_to_start
+			)
+		elif [ -f ./run_rails_dev.sh ]; then
+			(
+			app_to_start=$(basename `pwd`)
+			/vagrant/script/start-rails $app_to_start
 			)
 
 	else
@@ -64,6 +69,10 @@ else
 		 	elif [[ -f /vagrant/apps/${app}/run_ruby_dev.sh ]]
 			then
 				echo "${app}: /vagrant/script/start-ruby ${app}" >> /vagrant/Procfile
+				cat /vagrant/Procfile
+			elif [[ -f /vagrant/apps/${app}/run_rails_dev.sh ]]
+				then
+				echo "${app}: /vagrant/script/start-rails ${app}" >> /vagrant/Procfile
 				cat /vagrant/Procfile
 			else
 				run=/vagrant/apps/${app}/run_dev.sh

@@ -14,5 +14,5 @@ source_app_environment $1
 source_secrets
 cd /vagrant/apps/$1/
 bundle install
-./run_ruby_dev.sh $(get_port_for_app $1)
+./run_rails_dev.sh $(get_port_for_app $1)
 set -e

@@ -18,12 +18,12 @@ apt-get install -qy libcurl4-openssl-dev phantomjs
 apt-get install -qy binutils libproj-dev gdal-bin libgdal-dev libgeos-3.4.2 libproj0 libgdal1h  python-gdal
 
 echo "Updating Ruby"
-apt-get install -qy ruby2.1-dev
 apt-get install -qy software-properties-common python-software-properties
 apt-get install -qy python-software-properties
 apt-add-repository ppa:brightbox/ruby-ng
 apt-get update
-apt-get install -qy ruby2.1
+apt-get install -qy ruby2.1 ruby2.0-dev ruby2.1-dev
+gem install bundler
 
 echo "Installing dependencies"
 apt-get install -qy elasticsearch
