@@ -4,27 +4,7 @@
 #
 # The format is app-name:port
 
-
-system-of-record-alpha:8000
-mint-alpha:8001
-property-frontend-alpha:8002
-search-api-alpha:8003
-generate-test-data-alpha:0
-the-feeder-alpha:8006
-service-frontend-alpha:8007
-decision-alpha:8009
-acceptance-tests-alpha:0
-datatypes-alpha:0
-audit-plugin-alpha:0
+public_playground:7000
+property-title-api:7001
 html-prototypes:9000
-secrets:0
-style-guide:9001
-service-tests-alpha:0
-ownership-alpha:8010
-matching-alpha:8011
-fixtures-alpha:8012
-introductions-alpha:8013
-cases-alpha:8014
-historian-alpha:8015
-lr-utils:0
 charges-html-prototype:9002
